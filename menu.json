@@ -1,0 +1,111 @@
+{
+  "categories": [
+    { "id": "all", "label": "Tout", "icon": "grid" },
+    { "id": "petitdej", "label": "Petit-dej", "icon": "leaf" },
+    { "id": "plats", "label": "Plats", "icon": "bowl" },
+    { "id": "desserts", "label": "Desserts", "icon": "cake" },
+    { "id": "boissons", "label": "Boissons", "icon": "cup" }
+  ],
+  "items": [
+    {
+      "id": "pd1",
+      "name": "Bouillie de Mil",
+      "category": "petitdej",
+      "price": 2000,
+      "veg": true,
+      "promo": 0,
+      "image": "images/bouillie-de-mil+tra-tra.jpg",
+      "desc": "Avec Tra Tra"
+    },
+    {
+      "id": "p1",
+      "name": "Foutou",
+      "category": "plats",
+      "price": 4500,
+      "veg": false,
+      "promo": 20,
+      "image": "images/foutou.jpg",
+      "desc": "Accompagné de sa sauce graine"
+    },
+    {
+      "id": "p2",
+      "name": "Placali",
+      "category": "plats",
+      "price": 5000,
+      "veg": false,
+      "promo": 20,
+      "image": "images/placali.jpg",
+      "desc": "avec de la sauce (graine / kopè / djoumblé / koulala) + (viande / poisson / kplo / queue de boeuf / Crabe)... Faite votre choix"
+    },
+    {
+      "id": "p3",
+      "name": "Garba",
+      "category": "plats",
+      "price": 1000,
+      "veg": false,
+      "promo": 0,
+      "image": "images/garba.jpg",
+      "desc": "Délicieux accompagné de poisson thon"
+    },
+    {
+      "id": "p4",
+      "name": "Attiéké Poisson",
+      "category": "plats",
+      "price": 3500,
+      "veg": false,
+      "promo": 0,
+      "image": "images/attieke-poisson.jpg",
+      "desc": "Semoule de manioc, poisson braisé, piment"
+    },
+    {
+      "id": "p5",
+      "name": "Poulet braisé",
+      "category": "plats",
+      "price": 3500,
+      "veg": false,
+      "promo": 0,
+      "image": "images/attieke-poulet.jpg",
+      "desc": "Poulet braisé avec attiéké"
+    },
+    {
+      "id": "d1",
+      "name": "Lait caillé",
+      "category": "desserts",
+      "price": 1000,
+      "veg": true,
+      "promo": 0,
+      "image": "images/lait-caille.webp",
+      "desc": "Vraiment bon et onctueux"
+    },
+    {
+      "id": "d2",
+      "name": "Le Dégûe",
+      "category": "desserts",
+      "price": 1000,
+      "veg": true,
+      "promo": 15,
+      "image": "images/degue.jpg",
+      "desc": "Gâteau moelleux à la noix de coco"
+    },
+    {
+      "id": "b1",
+      "name": "Bissap frais",
+      "category": "boissons",
+      "price": 500,
+      "veg": true,
+      "promo": 0,
+      "image": "images/bissap.jpg",
+      "desc": "Infusion d'hibiscus, menthe"
+    },
+    {
+      "id": "b2",
+      "name": "Jus de gingembre",
+      "category": "boissons",
+      "price": 500,
+      "veg": true,
+      "promo": 0,
+      "image": "images/gingembre.jpg",
+      "desc": "Gingembre frais, citron, ananas"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AK Traiteur — Caisse</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-mark">AK</div>
+      <div class="brand-name">
+        <span>AK Traiteur</span>
+        <small>Caisse &amp; Commandes</small>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <button class="nav-item is-active" data-view="menu">
+        <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+        <span>Menu</span>
+      </button>
+    </nav>
+
+    <div id="sidebarCategoryFilter" class="category-filter sidebar-category-filter" aria-label="Filtrer plats par catégorie">
+      <!-- Boutons de filtrage rendus par JavaScript -->
+    </div>
+
+    <div class="sidebar-foot">
+      <span class="dot-live"></span> Caisse ouverte
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+    <header class="topbar">
+      <div class="topbar-title">
+        <h1>Voici le menu proposé</h1>
+        <p>Sélectionnez les plats à ajouter au ticket</p>
+      </div>
+      <div class="search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="text" id="searchInput" placeholder="Rechercher un plat…">
+      </div>
+    </header>
+
+    <nav class="categories" id="categoryBar"></nav>
+
+    <section class="grid" id="productGrid"></section>
+  </main>
+
+  <!-- ORDER TICKET -->
+  <aside class="ticket">
+    <div class="ticket-paper">
+
+      <div class="ticket-head">
+        <div class="ticket-head-row">
+          <span class="ticket-label">Ticket</span>
+          <span class="ticket-id" id="ticketId">#0000</span>
+        </div>
+      </div>
+
+      <div class="customer-info">
+        <label class="cust-row"><br><input id="customerName" type="text" placeholder="Nom du client"></label>
+        <label class="cust-row"><br><input id="customerPhone" type="tel" placeholder="Numéro de téléphone"></label>
+        <label class="cust-row"><br><input id="customerAddress" type="text" placeholder="Adresse Yango"></label>
+      </div>
+
+      <div class="ticket-lines" id="ticketLines">
+        <p class="ticket-empty">Aucun article pour le moment.<br>Touchez un plat pour l'ajouter.</p>
+      </div>
+
+      <div class="ticket-perf" aria-hidden="true"></div>
+
+      <div class="ticket-summary">
+        <div class="sum-row"><span>Sous-total</span><span id="sumSubtotal">0 FCFA</span></div>
+        <div class="sum-row sum-tax-row">
+          <span>Taxe / Service (<span id="taxRateLabel">0</span>%)</span>
+          <span id="sumTax">0 FCFA</span>
+        </div>
+        <div class="sum-row sum-total"><span>Total</span><span id="sumTotal">0 FCFA</span></div>
+      </div>
+
+      
+
+      <button class="checkout-btn" id="checkoutBtn">
+        <svg viewBox="0 0 24 24"><path d="M20.5 11.5a8.4 8.4 0 1 1-3.1-6.4"/><path d="M20 4v5h-5"/></svg>
+        Envoyer la commande
+      </button>
+      <button class="clear-btn" id="clearBtn">Vider le ticket</button>
+    </div>
+  </aside>
+
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
