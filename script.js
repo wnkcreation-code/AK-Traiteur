@@ -62,6 +62,15 @@ function renderCategories() {
       ${cat.label}
     </button>
   `).join("");
+
+  bar.querySelectorAll("button.cat-pill").forEach(btn => {
+    btn.addEventListener("click", () => {
+      activeCategory = btn.dataset.cat;
+      renderCategories();
+      renderGrid();
+      renderTicketCategoryFilter();
+    });
+  });
 }
 
 /* ============================================================
