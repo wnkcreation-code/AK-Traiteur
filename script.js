@@ -4,7 +4,7 @@
 const CONFIG = {
   // Numéro WhatsApp de destination, format international SANS "+" ni espaces
   // Exemple Côte d'Ivoire : "225XXXXXXXXX"
-  WHATSAPP_NUMBER: "2250710988269",
+  WHATSAPP_NUMBER: "2250708007457",
   // Taux de taxe / frais de service appliqué au sous-total (0.18 = 18%)
   TAX_RATE: 0,
   CURRENCY: "FCFA",
